@@ -1,11 +1,10 @@
 
 import discord, asyncio
+import os
 import random
 import time
 from random import *
 
-
-token = "Njg4NTc2MjE4MTUyMzA0NjYy.XnbgVg.VrwRpHN7sjhL16A6J1IAFPGDRQw"
 client = discord.Client()
 
 @client.event
@@ -222,5 +221,5 @@ async def on_message(message):
         await message.channel.send("번 튕겨냈습니다!")
         
             
-
+access_token = os.environ["BOT_TOKEN"]
 client.run(token)
