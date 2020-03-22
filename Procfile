@@ -1,1 +1,1 @@
-worke: python numpad_katana.py
+worker: python numpad_katana.py
