@@ -22,7 +22,7 @@ async def on_message(message):
     #made by LandmineSoldier (지뢰군인)
     #내 피땀눈물 섞어만든 게임
 
-    if message.content.startswith('넘패드카타나'):
+    if message.content == '넘패드카타나':
         channel = message.channel
         await channel.send('(5초내에 그렇다 라고 답하시오)')
 
