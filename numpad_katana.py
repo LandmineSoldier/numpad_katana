@@ -30,7 +30,7 @@ async def on_message(message):
             return m.content == '그렇다' and m.channel == channel
         await client.wait_for('message', check=check, timeout=5.0)
 
-        embed=discord.Embed(title="넘패드카타나", description="하는 방법", color=0xff6600)
+        embed=discord.Embed(title="넘패드카타나", description="하는 방법", color=0x371fff)
         embed.set_author(name="3초내에 봇의 공격을 맞받아치세요", url="https://steamcommunity.com/id/LandmineSoldier/", icon_url="https://cdn.discordapp.com/app-icons/681470208648544279/3194ed1f665a08c5431ff9f009b5dd61.png?size=64")
         embed.set_thumbnail(url="https://cdn.discordapp.com/app-icons/688576218152304662/324834261bb9c63f2982e0e1e41a82b6.png?size=256")
         embed.add_field(name="가로공격", value="좌우 반전", inline=True)
