@@ -39,6 +39,7 @@ async def on_message(message):
         embed.add_field(name="가로공격 예시", value="123-> 321", inline=True)
         embed.add_field(name="세로공격 예시", value="741 -> 147", inline=True)
         embed.add_field(name="대각선 공격 예시", value="159 -> 753", inline=True)
+        embed.add_field(name="kimryul", value="최고기록 371번", inline=True)
         embed.set_footer(text="60초 내에 ready라고 말하세요")
         await message.channel.send(embed=embed)
 
