@@ -33,12 +33,7 @@ async def on_message(message):
         embed=discord.Embed(title="넘패드카타나", description="하는 방법", color=0x69A5C9)
         embed.set_author(name="5초내에 봇의 공격을 맞받아치세요", url="https://steamcommunity.com/id/LandmineSoldier/", icon_url="https://cdn.discordapp.com/app-icons/681470208648544279/3194ed1f665a08c5431ff9f009b5dd61.png?size=64")
         embed.set_thumbnail(url="https://cdn.discordapp.com/app-icons/688576218152304662/324834261bb9c63f2982e0e1e41a82b6.png?size=256")
-        embed.add_field(name="가로공격", value="좌우 반전", inline=True)
-        embed.add_field(name="세로공격", value="상하 반전", inline=True)
-        embed.add_field(name="대각선 공격", value="상하좌우 반전", inline=True)
-        embed.add_field(name="가로공격 예시", value="123-> 321", inline=True)
-        embed.add_field(name="세로공격 예시", value="741 -> 147", inline=True)
-        embed.add_field(name="대각선 공격 예시", value="159 -> 753", inline=True)
+        embed.add_field(name="숫자 반대로 쓰세요", value="159 -> 951", inline=True)
         embed.add_field(name="찌르기는 같은 숫자를 누르세요(2초)", value="5 -> 5", inline=True)
         embed.add_field(name="kimryul", value="최고기록 371번", inline=True)
         embed.set_footer(text="60초 내에 ready라고 말하세요")
@@ -180,7 +175,7 @@ async def on_message(message):
             elif r == 13:
                 await message.channel.send("159")
                 def r13(m):
-                    return m.content == '753' and m.channel == channel
+                    return m.content == '951' and m.channel == channel
                 try : 
                     await client.wait_for('message', check=r13, timeout=5.0)
                 except asyncio.TimeoutError:
@@ -190,7 +185,7 @@ async def on_message(message):
             elif r == 14:
                 await message.channel.send("951")
                 def r14(m):
-                    return m.content == '357' and m.channel == channel
+                    return m.content == '159' and m.channel == channel
                 try : 
                     await client.wait_for('message', check=r14, timeout=5.0)
                 except asyncio.TimeoutError:
@@ -200,7 +195,7 @@ async def on_message(message):
             elif r == 15:
                 await message.channel.send("357")
                 def r15(m):
-                    return m.content == '951' and m.channel == channel
+                    return m.content == '753' and m.channel == channel
                 try : 
                     await client.wait_for('message', check=r15, timeout=5.0)
                 except asyncio.TimeoutError:
@@ -210,7 +205,7 @@ async def on_message(message):
             elif r == 16:
                 await message.channel.send("753")
                 def r16(m):
-                    return m.content == '159' and m.channel == channel
+                    return m.content == '357' and m.channel == channel
                 try : 
                     await client.wait_for('message', check=r16, timeout=5.0)
                 except asyncio.TimeoutError:
