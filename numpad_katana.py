@@ -36,6 +36,7 @@ async def on_message(message):
         embed.add_field(name="숫자 반대로 쓰세요", value="159 -> 951", inline=True)
         embed.add_field(name="찌르기는 같은 숫자를 누르세요(2초)", value="5 -> 5", inline=True)
         embed.add_field(name="kimryul", value="최고기록 371번", inline=True)
+        embed.add_field(name="약 120회 이상 집중하고 있으니 눈이 매우 피로해집니다", value="힘드시면 제발 멈추세요.", inline=True)
         embed.set_footer(text="60초 내에 ready라고 말하세요")
         await message.channel.send(embed=embed)
 
@@ -212,6 +213,9 @@ async def on_message(message):
                     break
                 else:
                     s += 1
+
+
+            #찌르기
             elif r == 17 and s >= 50:
                 await message.channel.send("1")
                 def r17(m):
@@ -302,6 +306,8 @@ async def on_message(message):
                     break
                 else:
                     s += 1
+
+
         ment = randint(1,3)
         if s < 20:
             if ment == 1:
